@@ -26,39 +26,39 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="py-4 bg-gradient-to-br from-yellow-50 to-amber-50 px-8 md:sticky md:top-0 shadow-md z-50 w-full">
+    <nav className="py-4 bg-gradient-to-r from-teal-500 via-cyan-400 to-sky-300 px-8 md:sticky md:top-0 shadow-md z-50 w-full">
       <div className="flex justify-between items-center">
-        <div className="flex items-center gap-5 font-bold text-2xl">
-          <img src={logo} alt="logo" height="50px" width="50px" />
-          <div className="border-b-4 border-yellow-400">Ek-Prayass</div>
+        <div className="flex items-center gap-5 font-bold text-2xl text-white">
+          <img src={logo} alt="logo" height="50px" width="50px" className="rounded-full" />
+          <div className="border-b-4 border-white">Ek-Prayass</div>
         </div>
 
         
         <div className="hidden md:block">
-          <ul className="flex gap-5">
-            <li className="p-2">
+          <ul className="flex gap-5 text-white font-medium">
+            <li className="p-2 hover:text-white/80 transition-colors">
               <Link to="/">Home</Link>
             </li>
-            <li className="p-2">
+            <li className="p-2 hover:text-white/80 transition-colors">
               <Link to="/about">About</Link>
             </li>
-            <li className="p-2">
+            <li className="p-2 hover:text-white/80 transition-colors">
               <Link to="/project">Projects</Link>
             </li>
-            <li className="p-2">
+            <li className="p-2 hover:text-white/80 transition-colors">
               <Link to="/notice">Notice</Link>
             </li>
-            <li className="p-2">
+            <li className="p-2 hover:text-white/80 transition-colors">
               <Link to="/volunteer">Volunteer</Link>
             </li>
-            <li className="p-2">
+            <li className="p-2 hover:text-white/80 transition-colors">
               <Link to="/team">Our Team</Link>
             </li>
             
             <li className="p-2">
               <button
                 onClick={handleDonateClick}
-                className="text-white hover:scale-105 transition-all duration-300 font-semibold bg-gradient-to-br from-yellow-400 to-amber-500 rounded-lg p-3"
+                className="text-teal-700 hover:scale-105 transition-all duration-300 font-semibold bg-white rounded-lg p-3 shadow-md"
               >
                 Donate
                 <HeartHandshake className="inline-block ml-2" size={20} />
@@ -69,7 +69,7 @@ const Navbar = () => {
 
         
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="p-2">
+          <button onClick={toggleMenu} className="p-2 text-white">
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -77,8 +77,8 @@ const Navbar = () => {
 
       
       {isMenuOpen && (
-        <div className="md:hidden mt-4 pb-4">
-          <ul className="flex flex-col gap-2">
+        <div className="md:hidden mt-4 pb-4 border-t border-white/30">
+          <ul className="flex flex-col gap-2 text-white font-medium">
             <li className="p-2">
               <Link to="/" onClick={toggleMenu}>
                 Home
@@ -116,7 +116,7 @@ const Navbar = () => {
                   setIsMenuOpen(false);
                   handleDonateClick();
                 }}
-                className="text-yellow-600 font-semibold bg-gradient-to-br from-yellow-400 to-amber-500 rounded-lg p-3 w-full"
+                className="text-teal-700 font-semibold bg-white rounded-lg p-3 w-full shadow-md"
               >
                 Donate
                 <HeartHandshake className="inline-block ml-2" size={20} />

@@ -31,16 +31,16 @@ const Home = () => {
   return (
     <section className="flex items-center justify-center px-4 sm:px-6 py-6 sm:py-8 max-w-6xl mx-auto">
       <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl gap-8 lg:gap-12">
-        <div className="w-full lg:w-1/2 text-center lg:text-left text-black">
+        <div className="w-full lg:w-1/2 text-center lg:text-left text-gray-900">
           <div className="space-y-4">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-100 to-yellow-100 px-4 py-2 rounded-full text-sm font-medium text-amber-800 border border-amber-200">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-50 to-teal-50 px-4 py-2 rounded-full text-sm font-medium text-teal-700 border border-cyan-200">
               <Sparkles className="w-4 h-4" />
               Youth-Led Initiative
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
               Changing Lives Through
-              <span className="block bg-gradient-to-r from-amber-400 via-yellow-500 to-orange-500 bg-clip-text text-transparent animate-pulse">
+              <span className="block bg-gradient-to-r from-teal-500 via-cyan-500 to-sky-500 bg-clip-text text-transparent animate-pulse">
                 Awareness
               </span>
             </h1>
@@ -52,7 +52,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 pt-3 items-center justify-center lg:justify-start">
             <Link to="/about">
               <button
-                className="bg-gradient-to-r from-yellow-400 to-amber-500 hover:scale-105 transition-all duration-300 rounded-xl p-3 text-white font-semibold flex items-center gap-2 w-full sm:w-auto justify-center"
+                className="bg-gradient-to-r from-teal-500 to-cyan-500 hover:scale-105 transition-all duration-300 rounded-xl p-3 text-white font-semibold flex items-center gap-2 w-full sm:w-auto justify-center shadow-lg"
               >
                 Know more
                 <svg
@@ -67,9 +67,9 @@ const Home = () => {
             </Link>
             <button
               onClick={openVideo}
-              className="bg-white text-yellow-600 border-2 border-yellow-500 hover:scale-105 transition-all duration-300 rounded-xl font-medium p-3 flex items-center gap-2 w-full sm:w-auto justify-center"
+              className="bg-white text-teal-600 border-2 border-teal-400 hover:scale-105 transition-all duration-300 rounded-xl font-medium p-3 flex items-center gap-2 w-full sm:w-auto justify-center hover:bg-teal-50"
             >
-              <div className="w-6 h-6 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+              <div className="w-6 h-6 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Play className="w-4 h-4 text-white ml-0.5" fill="currentColor" />
               </div>
               Play Video
@@ -94,7 +94,7 @@ const Home = () => {
           <div className="relative w-full max-w-4xl mx-auto">
             <button
               onClick={closeVideo}
-              className="absolute -top-12 right-0 text-white hover:text-amber-400 transition-colors z-10"
+              className="absolute -top-12 right-0 text-white hover:text-cyan-400 transition-colors z-10"
             >
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

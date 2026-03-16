@@ -4,7 +4,7 @@ import videoSrc from '../assets/vi.mp4';  // Import your video file
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-amber-50 to-orange-50 py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-cyan-50 via-white to-sky-50 py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           
@@ -12,8 +12,8 @@ const About = () => {
           <div className="space-y-10">
             <div className="relative">
               <div className="flex items-center space-x-4 mb-2">
-                <div className="w-16 h-2 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full shadow-lg"></div>
-                <span className="text-sm font-bold text-yellow-600 uppercase tracking-widest bg-yellow-100 px-4 py-2 rounded-full">
+                <div className="w-16 h-2 bg-gradient-to-r from-teal-400 to-cyan-500 rounded-full shadow-lg"></div>
+                <span className="text-sm font-bold text-teal-600 uppercase tracking-widest bg-teal-100 px-4 py-2 rounded-full">
                   Know About Us
                 </span>
               </div>
@@ -23,13 +23,13 @@ const About = () => {
               <h1 className="text-5xl lg:text-6xl font-black text-gray-900 leading-tight">
                 Empowering{' '}
                 <span className="relative inline-block">
-                  <span className="bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500 bg-clip-text text-transparent drop-shadow-sm">
+                  <span className="bg-gradient-to-r from-teal-500 via-cyan-500 to-sky-500 bg-clip-text text-transparent drop-shadow-sm">
                     Change
                   </span>
                 </span>
                 <br />
                 Through Community and{' '}
-                <span className="bg-gradient-to-r from-amber-500 to-yellow-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">
                   Collaboration
                 </span>
               </h1>
@@ -52,21 +52,21 @@ const About = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 pt-6">
               <Link to="/volunteer">
-                <button className="group px-10 py-4 bg-gradient-to-r from-yellow-400 to-amber-500 text-white font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <button className="group px-10 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <span className="relative z-10">Join Our Community</span>
                 </button>
               </Link>
               <Link to="/team">
-                <button className="group px-10 py-4 border-3 border-yellow-400 text-yellow-600 font-bold text-lg rounded-2xl shadow-lg hover:shadow-xl hover:border-amber-500 hover:text-amber-600 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 bg-white hover:bg-gradient-to-r hover:from-yellow-50 hover:to-amber-50">
+                <button className="group px-10 py-4 border-3 border-teal-400 text-teal-600 font-bold text-lg rounded-2xl shadow-lg hover:shadow-xl hover:border-cyan-500 hover:text-cyan-600 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 bg-white hover:bg-gradient-to-r hover:from-cyan-50 hover:to-teal-50">
                   Learn More
                 </button>
               </Link>
             </div>
 
-            <div className="grid grid-cols-3 gap-8 pt-12 border-t-2 border-yellow-200">
+            <div className="grid grid-cols-3 gap-8 pt-12 border-t-2 border-cyan-200">
               <div className="text-center group">
-                <div className="text-4xl font-black bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-4xl font-black bg-gradient-to-r from-teal-500 to-cyan-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
                   100+
                 </div>
                 <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">
@@ -74,7 +74,7 @@ const About = () => {
                 </div>
               </div>
               <div className="text-center group">
-                <div className="text-4xl font-black bg-gradient-to-r from-amber-500 to-yellow-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-4xl font-black bg-gradient-to-r from-cyan-500 to-teal-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
                   25+
                 </div>
                 <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">
@@ -82,7 +82,7 @@ const About = () => {
                 </div>
               </div>
               <div className="text-center group">
-                <div className="text-4xl font-black bg-gradient-to-r from-yellow-600 to-amber-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-4xl font-black bg-gradient-to-r from-teal-600 to-cyan-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
                   15+
                 </div>
                 <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">
@@ -95,14 +95,13 @@ const About = () => {
           {/* Video Section */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105">
-              <div className="relative bg-gradient-to-br from-yellow-500 to-amber-500 p-3 rounded-3xl">
+              <div className="relative bg-gradient-to-br from-teal-500 to-cyan-500 p-3 rounded-3xl">
                 <video
                   className="w-full h-80 sm:h-96 lg:h-[28rem] object-cover rounded-2xl shadow-xl"
                   controls
                   autoPlay
                   loop
                   muted
-                  poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%23fef3c7'/%3E%3Cg fill='%23f59e0b' opacity='0.2'%3E%3Ccircle cx='200' cy='150' r='60'/%3E%3Ccircle cx='600' cy='450' r='80'/%3E%3Cpath d='M300 300 L500 200 L500 400 Z'/%3E%3C/g%3E%3Ctext x='400' y='280' text-anchor='middle' fill='%23f59e0b' font-family='Arial' font-size='28' font-weight='bold'%3ECommunity in Action%3C/text%3E%3Ctext x='400' y='340' text-anchor='middle' fill='%23d97706' font-family='Arial' font-size='16'%3EBuilding a Better Tomorrow%3C/text%3E%3C/svg%3E"
                 >
                   <source src={videoSrc} type="video/mp4" />
                   Your browser does not support the video tag.
@@ -114,16 +113,16 @@ const About = () => {
 
         {/* Additional Features Section */}
         <div className="mt-24 text-center">
-          <div className="bg-white rounded-3xl shadow-xl p-12 border-2 border-yellow-100 hover:border-yellow-200 transition-all duration-300">
+          <div className="bg-white rounded-3xl shadow-xl p-12 border-2 border-cyan-100 hover:border-cyan-200 transition-all duration-300">
             <h3 className="text-3xl font-bold text-gray-900 mb-6">
               Why Choose Our{' '}
-              <span className="bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-teal-500 to-cyan-600 bg-clip-text text-transparent">
                 Community?
               </span>
             </h3>
             <div className="grid md:grid-cols-3 gap-8 mt-10">
               <div className="group">
-                <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <svg
                     className="w-8 h-8 text-white"
                     fill="none"
@@ -142,7 +141,7 @@ const About = () => {
                 <p className="text-gray-600">A welcoming space for everyone to contribute and grow together.</p>
               </div>
               <div className="group">
-                <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-teal-500 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <svg
                     className="w-8 h-8 text-white"
                     fill="none"
@@ -161,7 +160,7 @@ const About = () => {
                 <p className="text-gray-600">Real projects that create meaningful change in our communities.</p>
               </div>
               <div className="group">
-                <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-amber-400 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-400 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <svg
                     className="w-8 h-8 text-white"
                     fill="none"

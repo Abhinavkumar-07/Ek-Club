@@ -17,7 +17,7 @@ import Landing from './pages/Landing.jsx';
     
 function App () {
     return(
-        <div className="pb-24 bg-gradient-to-br from-yellow-50 to-amber-50">
+        <div className="pb-24 bg-white min-h-screen">
         <Navbar />
 
         <Routes>

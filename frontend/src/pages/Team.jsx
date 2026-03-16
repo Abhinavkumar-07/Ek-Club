@@ -73,37 +73,37 @@ const Team = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-white to-amber-50 py-16 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-cyan-50 via-white to-sky-50 py-16 px-4">
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-20">
           <div className="relative inline-block">
-            <h1 className="text-6xl md:text-7xl font-black text-yellow-500 mb-6 drop-shadow-lg">
+            <h1 className="text-6xl md:text-7xl font-black text-teal-500 mb-6 drop-shadow-lg">
               OUR TEAM
             </h1>
-            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-2 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full shadow-lg"></div>
+            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-2 bg-gradient-to-r from-teal-400 to-cyan-500 rounded-full shadow-lg"></div>
           </div>
           <p className="text-gray-600 text-xl mt-8 max-w-3xl mx-auto leading-relaxed">
             Meet the passionate individuals driving positive change in our community
           </p>
 
           <div className="flex justify-center items-center mt-8 space-x-4">
-            <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
-            <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse delay-75"></div>
-            <div className="w-4 h-4 bg-yellow-500 rounded-full animate-pulse delay-150"></div>
+            <div className="w-3 h-3 bg-teal-400 rounded-full animate-pulse"></div>
+            <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse delay-75"></div>
+            <div className="w-4 h-4 bg-teal-500 rounded-full animate-pulse delay-150"></div>
           </div>
         </div>
 
         <div className="mt-20 mb-16">
-          <div className="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-yellow-100">
-            <div className="bg-gradient-to-r from-yellow-400 to-amber-500 p-6">
+          <div className="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-cyan-100">
+            <div className="bg-gradient-to-r from-teal-500 to-cyan-500 p-6">
               <h2 className="text-4xl font-bold text-center text-white drop-shadow-lg">
                 Our Team Together
               </h2>
             </div>
 
             <div className="p-8">
-              <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-yellow-100 to-amber-100 aspect-video shadow-inner">
+              <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-cyan-100 to-teal-100 aspect-video shadow-inner">
                 <img 
                   src={images[index]} 
                   alt={`Team group photo ${index + 1}`} 
@@ -116,7 +116,7 @@ const Team = () => {
                   "Unity is strength... when there is teamwork and collaboration, wonderful things can be achieved."
                 </p>
                 <div className="flex justify-center mt-4">
-                  <div className="w-20 h-1 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full"></div>
+                  <div className="w-20 h-1 bg-gradient-to-r from-teal-400 to-cyan-500 rounded-full"></div>
                 </div>
               </div>
             </div>
@@ -126,11 +126,11 @@ const Team = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {teamMembers.map((member, idx) => (
             <div key={idx} className="group">
-              <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-yellow-200">
+              <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-cyan-200">
                 <div className="p-8 pb-6">
                   <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
                     <div className="relative">
-                      <div className="w-32 h-32 rounded-full overflow-hidden bg-gradient-to-br from-yellow-400 to-amber-500 p-1 shadow-lg">
+                      <div className="w-32 h-32 rounded-full overflow-hidden bg-gradient-to-br from-teal-400 to-cyan-500 p-1 shadow-lg">
                         <img 
                           src={member.image} 
                           alt={member.name}
@@ -142,7 +142,7 @@ const Team = () => {
                       <h2 className="text-2xl font-bold text-gray-900 mb-2">
                         {member.name}
                       </h2>
-                      <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-100 to-amber-100 text-yellow-800 rounded-full text-sm font-semibold">
+                      <div className="inline-block px-4 py-2 bg-gradient-to-r from-cyan-100 to-teal-100 text-teal-800 rounded-full text-sm font-semibold">
                         {member.position}
                       </div>
                     </div>
@@ -150,8 +150,8 @@ const Team = () => {
                 </div>
 
                 <div className="px-8 pb-8">
-                  <div className="bg-gradient-to-br from-gray-50 to-yellow-50 rounded-2xl p-6 relative">
-                    <div className="absolute top-4 left-4 text-4xl text-yellow-300 font-serif">"</div>
+                  <div className="bg-gradient-to-br from-gray-50 to-cyan-50 rounded-2xl p-6 relative">
+                    <div className="absolute top-4 left-4 text-4xl text-cyan-300 font-serif">"</div>
                     <div className="space-y-3 pt-4">
                       {member.quote.map((paragraph, pIdx) => (
                         <p key={pIdx} className="text-gray-700 leading-relaxed text-sm">
@@ -159,7 +159,7 @@ const Team = () => {
                         </p>
                       ))}
                     </div>
-                    <div className="absolute bottom-4 right-4 text-4xl text-yellow-300 font-serif rotate-180">"</div>
+                    <div className="absolute bottom-4 right-4 text-4xl text-cyan-300 font-serif rotate-180">"</div>
                   </div>
                 </div>
               </div>
@@ -168,7 +168,7 @@ const Team = () => {
         </div>
 
         <div className="text-center mt-20">
-          <div className="bg-gradient-to-br from-yellow-400 to-amber-500 rounded-3xl shadow-2xl p-12 text-white relative overflow-hidden">
+          <div className="bg-gradient-to-br from-teal-500 to-cyan-500 rounded-3xl shadow-2xl p-12 text-white relative overflow-hidden">
             <div className="absolute top-0 left-0 w-40 h-40 bg-white opacity-10 rounded-full -translate-y-20 -translate-x-20"></div>
             <div className="absolute bottom-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full translate-y-16 translate-x-16"></div>
 
@@ -180,7 +180,7 @@ const Team = () => {
                 Together, we can create meaningful change in our community. Every voice matters, every action counts.
               </p>
               <Link to="/volunteer">
-                <button className="bg-white text-yellow-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-50 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105">
+                <button className="bg-white text-teal-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-cyan-50 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105">
                   Get Involved
                 </button>
               </Link>
